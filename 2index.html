@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Текстове поле з обробником подій</title>
+</head>
+<body>
+
+<input type="text" id="myInput" placeholder="Введіть текст">
+
+<script>
+    var myInput = document.getElementById('myInput');
+
+    myInput.addEventListener('input', function() {
+        alert('Клавіша була натиснута!');
+    });
+</script>
+
+</body>
+</html>

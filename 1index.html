@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кнопка з обробником події</title>
+</head>
+<body>
+
+<button id="myButton">Натискай мене</button>
+
+<script>
+    // Отримуємо посилання на кнопку за допомогою її id
+    var myButton = document.getElementById('myButton');
+
+    // Додаємо обробник події для кліку на кнопку
+    myButton.addEventListener('click', function() {
+        alert('Кнопка була натиснута!');
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Долавання двох обробників подій</title>
+    <script>
+        function handler1() {
+            alert("Подія виникла!");
+        }
+
+        function handler2() {
+            alert("Подія зникла!");
+        }
+
+        function addEventListeners() {
+            let button = document.getElementById("button");
+            button.addEventListener("click", handler1);
+            button.addEventListener("click", handler2);
+        }
+
+        window.onload = addEventListeners;
+    </script>
+</head>
+<body>
+    <button id="button">Натисніть мене</button>
+</body>
+</html>
